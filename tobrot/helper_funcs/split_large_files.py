@@ -50,7 +50,7 @@ async def split_large_files(input_file):
             LOGGER.info(i)
             # file name generate
             parted_file_name = "{}_PART_{}.{}".format(
-                str(base_name), str(i).zfill(5), str(input_extension)
+                str(base_name), str(i).zfill(3), str(input_extension)
             )
 
             output_file = os.path.join(new_working_directory, parted_file_name)
